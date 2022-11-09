@@ -1,0 +1,39 @@
+
+
+.contact_sect{
+    position: relative;
+    top: -35px;
+    height: 280px;
+    background-color: #de5e4f;
+}
+
+.contact_sect .contact_content h1{
+    font-size: bold;
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 25px;
+    padding-top: 80px;
+    color: white;
+
+}
+
+.head p{
+    font-size: 30px;
+    text-align: center;
+    width: 95%;
+
+}
+
+.logos{
+    display: flex;
+    justify-content: center;
+}
+.logos .content{
+margin: 10px;
+padding: 10px 25px;
+
+}
+
+.content p{
+ font-size: 18px;
+}

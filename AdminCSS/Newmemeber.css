@@ -1,0 +1,64 @@
+.new{
+    position: relative;
+    left: 300px;
+    top: 50px;
+    background-color: white;
+    padding: 10px;
+    width: 76%;
+
+}
+
+h1{
+    color: red;
+    margin: 10px 0px ;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 20px;
+    }
+
+/* hr{
+    width: 80%;
+    margin: auto;
+} */
+
+.sidebar.close ~ .new{
+    left: 120px;
+    width: 85%;
+}
+
+.tables{
+    width: 100%;
+}
+
+.tables tr{
+    position: relative;
+    top: 3px;
+    color: black;
+    font-size: 20px;
+    border: 2px solid var(--text-color);
+}
+
+.tables th{
+    position: relative;
+    color: black;
+    font-size: 20px;
+    border: 2px solid var(--text-color);  
+}
+
+.tables td{
+    position: relative;
+    color: black;
+    font-size: 20px;
+    border: 2px solid var(--text-color);  
+}
+
+.tables button{
+    font-size: 20px;
+    margin-left: 10px;
+    padding: 3px 0px;
+    width: 88px;
+    color: white;
+    background: blue;
+    border-radius: 10px ;
+    cursor: pointer;
+}

@@ -1,0 +1,28 @@
+.mainsect{
+    position: relative;
+    top: -35px;
+    height: 280px;
+    background-color: #de5e4f;
+}
+
+.mainsect .maincontainer .headcont h1{
+    font-size: bold;
+    font-size: 42px;
+    text-align: center;
+    color: white;
+    /* margin-bottom: 25px; */
+    padding-top: 50px;
+
+}
+.mainsect .maincontainer .textcont p{
+    font-size: bold;
+    text-align: center;
+    color: white;
+    width: 50%;
+    margin: auto;
+    font-size: 20px;
+
+}
+
+
+

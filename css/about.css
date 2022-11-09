@@ -1,0 +1,42 @@
+.aboutsect{
+    position: relative;
+    top: -35px;
+    height: 280px;
+    background-color: #de5e4f;
+}
+
+.aboutsect .main .Abouthead h1{
+    font-size: bold;
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 25px;
+    padding-top: 80px;
+    color: white;
+
+}
+.aboutsec{
+    margin-top: 60px;
+}
+
+.content_section{
+justify-content: center;
+}
+
+.about_img img{
+    display: block;
+    margin: auto;
+    width: 70px;
+    margin-bottom: 15px;
+}
+.text{
+    background-color: #f5f2ed;
+
+}
+ p{
+    margin-top: 10px;
+    margin-top: 40px;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    align-items: center;
+}

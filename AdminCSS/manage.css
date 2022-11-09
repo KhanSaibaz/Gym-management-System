@@ -1,0 +1,72 @@
+.manage{
+    position: relative;
+    top: 50px;
+    left: 300px;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 75%;
+}
+
+.sidebar.close ~ .manage{
+    left: 150px;
+    width: 80%;
+
+}
+
+
+h2{
+color: red;
+margin: 10px 0px ;
+font-size: 32px;
+text-align: center;
+}
+
+hr{
+    margin-bottom: 10px;
+}
+
+.head a{
+    position: relative;
+    right: -4px;
+    display: block;
+    margin-left: auto;
+    width: 20%;
+}
+
+.tables tr{
+    position: relative;
+    top: 3px;
+    color: black;
+    font-size: 20px;
+    border: 2px solid var(--text-color);
+}
+
+.tables th{
+    position: relative;
+    color: black;
+    font-size: 20px;
+    border: 2px solid var(--text-color);  
+}
+
+.tables td{
+    position: relative;
+    color: black;
+    font-size: 20px;
+    border: 2px solid var(--text-color);  
+}
+.manage .tables{
+    width: 100%;
+}
+
+.tables button{
+    font-size: 20px;
+    margin-left: 10px;
+    padding: 3px 0px;
+    width: 88px;
+    color: white;
+    /* background: green; */
+    border-radius: 10px ;
+    cursor: pointer;
+}

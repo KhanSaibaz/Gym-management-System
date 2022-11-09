@@ -1,0 +1,66 @@
+.payements{
+    position: relative;
+    top: 30px;
+    left: 300px;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 75%;
+    height: 80%;
+    box-shadow: 2px 2px 4px 1px #afa4a4;
+}
+.sidebar.close ~ .payements{
+    left: 120px;
+    width: 80%;
+
+}
+
+.payements .type{
+    display: flex;
+    width: 100%;
+    margin: auto;
+
+}
+
+.payements .container{
+    height: 60%;
+    border: 2px solid black;
+    margin: 10px;
+    text-align: center;
+    padding: 80px;
+    box-shadow: 2px 2px 4px 1px #afa4a4;
+    border-radius: 10px;
+}
+
+.payements .first{
+    background-image: linear-gradient( #FEB692, #EA5455);
+    color: white;
+
+}
+.payements .second{
+    background-image: linear-gradient( #CE9FFC, #7367F0);
+    color: Black;
+
+
+}
+
+.payements a{
+    width: 50%;
+    margin: auto;
+    text-decoration: none;
+}
+.payements .full-container{
+    color: rgb(27, 27, 26);
+    border: 2px solid black;
+    width: 50%;
+    margin: 10px auto;
+    text-align: center;
+    padding: 80px;
+    background-image: linear-gradient(154deg, #e915d5, #08a4ff2e);
+}
+
+
+.full-container a{
+    width: 40%;
+}

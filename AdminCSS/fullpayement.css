@@ -1,0 +1,26 @@
+
+hr{
+    margin-bottom: 10px;
+}
+
+.tables tr{
+    position: relative;
+    top: 3px;
+    color: black;
+    font-size: 20px;
+    border: 2px solid var(--text-color);
+}
+
+.tables th{
+    position: relative;
+    color: black;
+    font-size: 20px;
+    border: 2px solid var(--text-color);  
+}
+
+.tables td{
+    position: relative;
+    color: black;
+    font-size: 20px;
+    border: 2px solid var(--text-color);  
+}

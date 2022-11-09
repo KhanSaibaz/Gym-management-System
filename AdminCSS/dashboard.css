@@ -1,0 +1,384 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Colors */
+    --body-color: #E4E9F7;
+    --sidebar-color: #FFF;
+    --primary-color: #fa0808;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #707070;
+
+    /* Transistion */
+
+    --trans-03: all 0.2s ease;
+    --trans-03: all 0.3s ease;
+    --trans-04: all 0.4s ease;
+    --trans-05: all 0.5s ease;
+}
+
+body {
+    height: 100vh;
+    background: var(--body-color);
+}
+
+body.dark {
+    --body-color: #18191A;
+    --sidebar-color: #2A2526;
+    --primary-color: #3A3B3C;
+    --primary-color-light: #3A3B3C;
+    --toggle-color: #FFF;
+    --text-color: rgb(250, 246, 246);
+}
+
+/* =====    SIDEBAR   ====== */
+.sidebar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 250px;
+    padding: 10px 15px;
+    background: var(--sidebar-color);
+    transition: var(--trans-05);
+    z-index: 100;
+}
+
+.sidebar .menu{
+    margin-top: 10px;
+}
+
+.sidebar.close {
+    width: 90px;
+}
+
+.sidebar .text {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text-color);
+    transition: var(--trans-04);
+    white-space: nowrap;
+}
+
+.sidebar.close .text {
+    opacity: 0;
+}
+
+
+.sidebar .image {
+    min-width: 80px;
+    display: flex;
+    align-items: center;
+}
+
+
+.sidebar li {
+    height: 50px;
+    margin-top: 12px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+
+.sidebar li .symbol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    font-size: 20px;
+}
+
+
+.sidebar li .symbol,
+.sidebar li .text {
+    color: var(--text-color);
+    transition: var(--trans-02);
+}
+
+.sidebar header {
+    position: relative;
+}
+
+
+.sidebar .img-text img {
+    width: 60px;
+
+}
+
+.sidebar header .img-text {
+    display: flex;
+    align-items: center;
+}
+
+
+.sidebar .img-text .header-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-text .name {
+    font-weight: 600;
+}
+
+
+
+.sidebar header .toggle {
+    position: absolute;
+    top: 25%;
+    right: -35px;
+    transform: translateY(-50%) rotate(180deg);
+    height: 30px;
+    width: 30px;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 23px;
+    color: var(--toggle-color);
+}
+
+.sidebar.close header .toggle {
+    transform: translate(-50%);
+
+}
+
+body.dark .sidebar header .toggle {
+    color: var(--text-color);
+}
+
+
+.sidebar li a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 15px;
+
+}
+
+.sidebar li a:hover {
+    background: var(--primary-color);
+
+}
+
+.sidebar li a:hover .symbol,
+.sidebar li a:hover .text {
+    color: var(--sidebar-color);
+}
+
+body.dark .sidebar li a:hover .symbol,
+body.dark .sidebar li a:hover .text {
+    color: var(--text-color);
+}
+
+
+.sidebar .menu-bar {
+    height: calc(100% - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.menu-bar .mode .mode-sun {
+    height: 50px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-bar .mode {
+    position: relative;
+    border-radius: 10px;
+    background: var(--primary-color-light);
+}
+
+.menu-bar .mode i {
+    position: absolute;
+}
+
+
+.menu-bar .mode i.sun {
+    opacity: 0;
+}
+
+body.dark .menu-bar .mode i.sun {
+opacity: 1;
+}
+
+
+body.dark .menu-bar .mode i.moon {
+    opacity: 0;
+}
+
+
+.menu-bar .mode .toggle-switch {
+    position: absolute;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-width: 60px;
+    cursor: pointer;
+    background: var(--primary-color-light);
+
+}
+
+.toggle-switch .switch {
+    position: relative;
+    height: 22px;
+    width: 44px;
+    border-radius: 20px;
+    background-color: var(--toggle-color);
+}
+
+.switch::before {
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    background: var(--sidebar-color);
+    transition: var(--trans-03);
+}
+
+body.dark .switch::before {
+    left: 25px;
+}
+
+.head-content{
+    margin-top:2px;
+    position: relative;
+    left: 257px;
+    height: 8vh;
+    width: calc(100% - 257px);
+    background: var(--body-color);
+    justify-content: center;
+    background: var(--primary-color-light);
+}
+
+.head-content .symbol{
+    font-size: 30px; 
+    position: absolute;
+    top: 13px;
+    left: 15px;
+    color: var(--text-color);
+}
+.head-content .text{
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--text-color);
+    padding: 10px 60px;
+    
+}
+
+.sidebar.close ~ .head-content{
+    height: 8vh;
+    left: 100px;
+    width: calc(100% - 100px);
+    
+}
+
+
+/* ======  Side Section for (payment,member) =====  */
+
+.home{
+    position: absolute;
+    left: 240px;
+    top: 80px;
+
+}
+
+
+
+.container{
+    width: 95%;
+    overflow: hidden;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 79vh;
+}
+
+
+.container ul{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.container ul li{
+display: inline-block;
+ list-style: none;
+ position: relative;
+ right: 20px;
+ width: 44%;
+ height: 84px;
+ margin: 10px 30px 35px 10px;       
+ border: 2px solid black;
+ background: var(--sidebar-color);
+}
+
+
+
+.home {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.home .logos{
+    text-align: center;
+    background-color: #f9030394;
+    height: 81px;
+    width: 90px;
+}
+
+.home .logos i{
+    position: relative;
+    top: 18px;
+    font-size: 50px;
+    color: white;
+}
+
+.home .container .list-items .newtab a{
+text-decoration: none;
+}
+
+.home .container .list-items .newtab h2{
+    position: relative;
+    top: -74px;
+    left: 120px;
+    color:var(--text-color);
+
+}
+
+.home .container .list-items .newtab p{
+    position: relative;
+    top: -94px;
+    left: 120px;
+    font-size: 18px;
+
+}
+
+
+
+.sidebar.close ~ .home{
+    left: 90px;
+    width: calc(100% - 100px);
+    
+}
+

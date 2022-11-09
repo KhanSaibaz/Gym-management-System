@@ -1,0 +1,181 @@
+:root {
+    /* Colors */
+    --body-color: #E4E9F7;
+    --sidebar-color: #FFF;
+    --primary-color: #fa0808;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: #707070;
+
+    /* Transistion */
+
+    --trans-03: all 0.2s ease;
+    --trans-03: all 0.3s ease;
+    --trans-04: all 0.4s ease;
+    --trans-05: all 0.5s ease;
+}
+
+body {
+    overflow-x: hidden;
+    height: 100vh;
+    background: var(--body-color);
+}
+
+body.dark {
+    --body-color: #18191A;
+    --sidebar-color: #2A2526;
+    --primary-color: #3A3B3C;
+    --primary-color-light: #3A3B3C;
+    --toggle-color: #FFF;
+    --text-color: rgb(250, 246, 246);
+}
+
+
+.main-heading {
+    position: relative;
+    left: 290px;
+    top: 20px;
+}
+
+.main-heading h1 {
+    color: var(--text-color);
+}
+
+hr {
+    /* margin: 10px 0px; */
+    margin-top: 9px;
+    margin-bottom: 20px;
+}
+
+
+.sidebar.close~.main-heading {
+    left: 100px;
+    width: calc(100% - 100px);
+
+}
+
+.Category-section {
+    width: 400px;
+    height: 190px;
+    background: var(--sidebar-color);
+    position: relative;
+    left: 270px;
+    top: 20px;
+
+}
+
+.Category-section .category h3 {
+    position: relative;
+    left: 40px;
+    top: 10px;
+    color: red;
+}
+
+.Category-section .category input {
+    display: block;
+    width: 80%;
+    height: 31px;
+    margin: 25px auto;
+    border: 2px solid var(--text-color);
+    /* margin: auto; */
+
+}
+
+.sidebar.close~.Category-section .category input {
+    width: 78%;
+}
+
+
+.Category-section .category .category-submit {
+    position: relative;
+    left: 40px;
+    width: 100px;
+    height: 28px;
+    background: var(--text-color);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.sidebar.close~.Category-section {
+    left: 120px;
+    width: calc(100% - 800px);
+
+}
+
+.show {
+    position: relative;
+    left: 270px;
+    top: 20px;
+    width: 75%;
+    background: #ffffff;
+    border-radius: 3px;
+    padding: 20px;
+    margin-top: 20px;
+    background: var(--sidebar-color);
+}
+
+
+/* ======   Table  =====*/
+
+
+
+#mytable th,
+#mytable td {
+    padding: 12px 15px;
+}
+
+
+#mytable tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+#mytable tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+
+
+
+
+.show th {
+    position: relative;
+    top: 3px;
+    margin-top: 21px;
+    color: black;
+    border: 2px solid var(--text-color);
+    
+}
+
+.show td {
+    position: relative;
+    top: 3px;
+    color: black;
+    font-size: 20px;
+    border: 2px solid var(--text-color);
+
+}
+
+.Delete-button {
+    background-color: red;
+    font-size: 19px;
+    border-radius: 6px;
+    padding: 2px 10px;
+    color: white;
+
+}
+
+.Delete-button:hover {
+    background-color: black;
+    font-size: 19px;
+    border-radius: 6px;
+    padding: 2px 10px;
+    color: white;
+    cursor: pointer;
+
+}
+
+.sidebar.close~.show {
+    left: 120px;
+    width: calc(100% - 150px);
+
+}

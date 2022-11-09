@@ -1,0 +1,71 @@
+
+
+.form{
+    position: relative;
+    left: 270px;
+    width: 150vh;
+    top: 20px;
+
+}
+
+h2{
+    color: red;
+    text-align: center;
+}
+.sidebar.close ~ .form{
+    left: 120px;
+    width: calc(100% - 150px );
+}
+
+.form .content .maindet{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.content  .details1{
+    margin: 15px 0px;
+    width: calc(100% / 2 - 20px);
+    font-size: 20px;
+
+    }
+
+.details1 input{
+    width: 100%;
+    font-size: 20px;
+    height: 30px;
+    margin-top: 17px;
+}
+
+.details1 select{
+    width: 100%;
+    font-size: 20px;
+    height: 30px;
+    margin-top: 7px;
+}
+
+.textarea textarea{
+    width: 100%;
+    margin-top: 7px;
+}
+
+
+.maindet .details1 .label-grp{
+    font-size: 18px;
+}
+
+
+
+ #submitHere {
+    width: 90px;
+    height: 37px;
+    padding: 10px;
+    color: white;
+    background: black;
+    border: 2px solid gray;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
